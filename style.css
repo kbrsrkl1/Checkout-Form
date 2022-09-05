@@ -1,0 +1,678 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f8f8ff ;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+   position: relative;
+   padding: 5% 0%;
+   text-align: center;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   font-size: 2rem;
+   letter-spacing: 4px;
+   overflow: hidden;
+   background: linear-gradient(90deg,#000,#fff,#000);
+   background-repeat: no-repeat ;
+   background-size: 80%;
+   animation: animate 4s linear infinite;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:rgba(255, 255, 255, 0);
+}
+
+@keyframes animate{
+    0%{
+        background-position: -500%;
+    }
+
+    100%{
+        background-position: 500%;
+    }
+}
+
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.email{
+    margin-left: 31px;
+    margin-top: -13px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.email:hover{
+    font-style: small;
+}
+
+
+.kutu{
+    width: 400px;
+    margin-top: 3px;
+    height: 27px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:34px;
+    border-radius: 4px;
+    color: rgb(83, 82, 82);
+}
+.kutu .mail{
+    margin-left: 40px;
+    margin-top: 2px;
+}
+
+ul{
+    position: relative;
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    
+} 
+
+.icon{
+   
+    margin-top: -21px;
+}
+
+ul li a .fa-regular{
+    font-size: 0rem;
+
+}
+
+
+ul li a::before{
+    font-family:"FontAwesome";
+    position: absolute;
+    margin-top: -0,90px;
+    margin-left: 5px;
+    font-size: 1.30rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content: "\f003";
+    background-image: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #dc2743;
+}
+
+
+ul li:hover a::before{
+    height: 120%;
+}
+
+.phone{
+    margin-left: -4px;
+    margin-top: 10px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.kutu1{
+    width: 400px;
+    margin-top: 3px;
+    height: 27px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    border-radius:4px;
+    color: rgb(83, 82, 82);
+}
+
+.kutu1 .phne{
+    margin-left: 40px;
+    margin-top: 4px;
+}
+
+.icon2{
+    margin-left: 0,10px;
+    
+}
+
+.icon2 ul li a .fa-regular{
+    font-size: 0rem;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.icon2 ul li a::before{
+    font-family:"FontAwesome";
+    margin-top: 61px;
+    margin-left:8px;
+    font-size: 1.30rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.icon2 ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content: "\f095";
+    background-image: linear-gradient(45deg,#159cb4 0%,#1b9de9 25%,#1d6ee7 50%,#0f58e0 75%,#3a1de2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #3a75ce;
+}
+
+.icon2 ul li:hover a::before{
+    height: 100%;
+}
+
+h2{
+   
+    margin-top: 90px;
+    text-decoration:none;
+    font-family: sans-serif;
+    color: #000;
+    font-size: 20px;
+}
+
+.fullname{
+    margin-left: -3px;
+    margin-top: 7px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.kutu2{
+    width: 400px;
+    margin-top: 3px;
+    height: 27px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    border-radius: 4px;
+    color: rgb(83, 82, 82);
+}
+
+.kutu2 .name{
+    margin-left: 40px;
+    margin-top: 4px;
+}
+.icon3 ul li a .fa-regular{
+    font-size: 0rem;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.icon3 ul li a::before{
+    font-family:"FontAwesome";
+    margin-top: -25px;
+    margin-left:8px;
+    font-size: 1.30rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.icon3 ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content:"\f007";
+    background-image: linear-gradient(45deg,#99e66d 0%,#7bdb43 25%,#09d609 50%,#09aa3a 75%,#07863c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #0c9936;
+}
+
+.icon3 ul li:hover a::before{
+    height: 100%;
+}
+
+.address{
+    margin-left: -3px;
+    margin-top: 7px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.kutu3{
+    width: 400px;
+    margin-top: 3px;
+    height: 27px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    border-radius: 4px;
+    color: rgb(83, 82, 82);
+}
+
+.kutu3 .adres{
+    margin-left: 40px;
+    margin-top: 4px;
+}
+.icon4 ul li a .fa-regular{
+    font-size: 0rem;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.icon4 ul li a::before{
+    font-family:"FontAwesome";
+    margin-top: -25px;
+    margin-left:8px;
+    font-size: 1.25rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.icon4 ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content:"\f015";
+    background-image: linear-gradient(45deg,#e75656 0%,#ee3939 25%,#f02323 50%,#d6330a 75%,#861607 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #ad381b;
+}
+
+.icon4 ul li:hover a::before{
+    height: 100%;
+}
+
+
+.cıty{
+    margin-left: -3px;
+    margin-top: 7px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.kutu4{
+    width: 400px;
+    margin-top: 3px;
+    height: 27px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    border-radius: 4px;
+    color: rgb(83, 82, 82);
+}
+
+.kutu4 .cty{
+    margin-left: 40px;
+    margin-top: 4px;
+}
+.icon5 ul li a .fa-regular{
+    font-size: 0rem;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.icon5 ul li a::before{
+    font-family:"FontAwesome";
+    margin-top: -25px;
+    margin-left:8px;
+    font-size: 1.25rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.icon5 ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content:"\f64f";
+    background-image: linear-gradient(45deg,#4a9699 0%,#54cace 25%,#22b4b9 50%,#19bdbd 75%,#117e7e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #127772;
+}
+
+.icon5 ul li:hover a::before{
+    height: 100%;
+}
+
+
+.country{
+    margin-left: -3px;
+    margin-top: 7px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.kutu5{
+    width: 200px;
+    margin-top: 3px;
+    height: 50px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    border-radius: 4px;
+    color: rgb(83, 82, 82);
+}
+
+.kutu5 .ctry{
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.icon6 ul li a .fa-regular{
+    font-size: 0rem;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.icon6 ul li a::before{
+    font-family:"FontAwesome";
+    margin-top: -35px;
+    margin-left:8px;
+    font-size: 1.25rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.icon6 ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content:"\f0ac";
+    background-image: linear-gradient(45deg,#c0ca35 0%,#9ab451 25%, #3eafa6 25%, #456d80 25%, #846a96 50%, #91577f 25%,#df3030 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #157712;
+}
+
+.icon6 ul li:hover a::before{
+    height: 100%;
+}
+
+
+.post{
+    position: relative;
+    margin-left: 250px;
+    margin-top: -98px;
+    padding: 5px;
+    color: rgb(83, 82, 82)
+}
+
+.kutu6{
+    position: relative;
+    width: 150px;
+    margin-top: 2px;
+    left: 250px;
+    height: 48px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    border-radius: 4px;
+    color: rgb(83, 82, 82);
+}
+
+.kutu6 .pstcd{
+    margin-left: 40px;
+    margin-top: 8px;
+}
+.icon7 ul li a .fa-regular{
+    font-size: 0rem;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+.icon7 ul li a::before{
+    font-family:"FontAwesome";
+    margin-top: -35px;
+    margin-left:260px;
+    font-size: 1.25rem;
+    height:0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.icon7 ul li:nth-child(1) a::before{
+    font-family: "FontAwesome";
+    content:"\f674";
+    background-image: linear-gradient(45deg,#ca9d49 0%,#b48e3b 25%,#a0821f 50%,#a88219 75%,#916d0a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid #916f12;
+}
+
+.icon7 ul li:hover a::before{
+    height: 100%;
+}
+
+.kutu7{
+    width: 15px;
+    margin-top: 3px;
+    height: 15px;
+    border: 1px solid gray;
+    background-color: #f8f8ff;
+    margin-left:-0.5px;
+    color: rgb(83, 82, 82);
+}
+
+.pp{
+   margin-left: 30px;
+   margin-top: -15px;
+}
+.button{
+    background-color: #d6330a;
+    color: white;
+    position: relative;
+    border:1px solid white;
+    width: 90px;
+    padding: 20px 20px;
+    margin-left: 450px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.button .btn{
+    position: relative;
+    right: 8px;
+}
+
+.kutu9{
+    margin-left: 600px;
+    width: 350px;
+    height: 400px;
+    background-color:rgb(196, 192, 192);
+    margin-top: -175%;
+    border-radius: 20px;
+}
+
+.photo1{
+    margin-left: 620px;
+    margin-top: -350px;
+}
+
+.photo2{
+    margin-left: 620px;
+    margin-top:60px ;
+}
+
+h4{
+    margin-left: 780px;
+    margin-top: -310px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.fiyat{
+    margin-left: 780px;
+    color: #ee370a;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.fiyatt{
+    margin-left: 840px;
+    margin-top: -14px;
+    color:black;
+    font-size: 12px;
+    text-decoration:line-through;
+}
+
+.kutu10{
+    position: relative;
+    width: 150px;
+    margin-top: 2px;
+    left: 760px;
+    height: 48px;
+    border: 2px solid rgb(14, 13, 13);
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    
+   
+}
+
+.kutu11{
+    position: relative;
+    width: 22px;
+    margin-top: -37px;
+    left: 780px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    font-size: 3rem;
+    color: #000; 
+}
+
+.kutu11 .eksi{
+    margin-top:-22px;
+    margin-left: 2px;
+}
+
+.bir{
+    position: relative;
+    margin-top:-25px;
+    margin-left: 208%;
+    font-size: 20px;
+    color: #000; 
+}
+
+.kutu12{
+    position: relative;
+    width: 22px;
+    margin-top: -23px;
+    left: 870px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: #000; 
+}
+
+.kutu12 .artı{
+    margin-top:-7px;
+    margin-left: 2px;
+}
+
+h5{
+    margin-left: 780px;
+    margin-top: 70px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.fiyat2{
+    margin-left: 780px;
+    color: #ee370a;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.fiyatt2{
+    margin-left: 840px;
+    margin-top: -14px;
+    color:black;
+    font-size: 12px;
+    text-decoration:line-through;
+}
+
+.kutu13{
+    position: relative;
+    width: 150px;
+    margin-top: 2px;
+    left: 760px;
+    height: 48px;
+    border: 2px solid rgb(14, 13, 13);
+    background-color: #eee;
+    border-radius: 5px;
+    
+   
+}
+
+.kutu14{
+    position: relative;
+    width: 22px;
+    margin-top: -37px;
+    left: 780px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    font-size: 3rem;
+    color: #000; 
+}
+
+.kutu14 .eksi2{
+    margin-top:-22px;
+    margin-left: 2px;
+}
+
+.bir2{
+    position: relative;
+    margin-top:-25px;
+    margin-left: 208%;
+    font-size: 20px;
+    color: #000; 
+}
+
+.kutu15{
+    position: relative;
+    width: 22px;
+    margin-top: -23px;
+    left: 870px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: #eee;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: #000; 
+}
+
+.kutu15 .artı2{
+    margin-top:-7px;
+    margin-left: 2px;
+}
+
